@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+article {
+  width: 825px;
+  border: 5px solid black;
+  margin: auto;
+  margin-top: 40px;
+}
+
+article h2 {
+  background-color: #ddd;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  position: relative;
+}
+
+article h2::before {
+  content: "sale";
+  background-color: red;
+  position: absolute;
+  font-size: 16px;
+  letter-spacing: 3px;
+  padding: 7px 12px;
+  color: white;
+  left: -40px;
+  top: -15px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.shipping {
+  text-transform: uppercase;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.colors {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.black,
+.blue,
+.red,
+.orange,
+.green,
+.brown {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: olivedrab;
+}
+
+.brown {
+  background-color: #a55b2a;
+}
+
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: square;
+  margin-left: 30px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: black;
+  border: none;
+  border-top: 5px solid black;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
