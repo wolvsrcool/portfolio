@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+article {
+  width: 825px;
+  border: 5px solid black;
+  margin: auto;
+  margin-top: 40px;
+  line-height: 1.3;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  align-items: center;
+  column-gap: 40px;
+}
+
+article h2 {
+  background-color: #ddd;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  position: relative;
+  grid-column: 1/-1;
+}
+
+article h2::before {
+  content: "sale";
+  background-color: red;
+  position: absolute;
+  font-size: 16px;
+  letter-spacing: 3px;
+  padding: 7px 12px;
+  color: white;
+  left: -40px;
+  top: -15px;
+}
+
+/* img {
+  float: left;
+} */
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* .div {
+  width: 242px;
+  margin-left: 40px;
+  padding: 15px 0;
+  float: left;
+} */
+
+.price {
+  font-size: 28px;
+}
+
+.shipping {
+  text-transform: uppercase;
+  color: #888;
+  font-size: 14px;
+  /* float: right; */
+}
+
+.price-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .description {
+  clear: both;
+} */
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.colors {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.black,
+.blue,
+.red,
+.orange,
+.green,
+.brown {
+  height: 20px;
+  width: 20px;
+  /* margin-right: 10px; */
+  /* display: inline-block; */
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: olivedrab;
+}
+
+.brown {
+  background-color: #a55b2a;
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: square;
+  margin-left: 30px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  background-color: black;
+  border: none;
+  border-top: 5px solid black;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  grid-column: 1/-1;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
